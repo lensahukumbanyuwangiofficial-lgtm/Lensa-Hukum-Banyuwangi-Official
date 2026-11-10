@@ -1,0 +1,36 @@
+LANGKAH TAYANG — LENSA HUKUM BANYUWANGI (diperbarui 10 November 2026)
+
+A. Unggah ke GitHub (struktur folder sudah benar)
+1. Ekstrak ZIP ini. Unggah SELURUH folder (admin, assets, content, uploads, dan file di root) memakai
+   GitHub Desktop atau git agar folder tidak ter-ratakan. Jangan unggah folder dist.
+2. Netlify: Add new site > Import from GitHub. Build command dan publish directory sudah ada di netlify.toml.
+
+B. WAJIB diisi (/admin > Pengaturan > Info situs). Build akan mencetak PERINGATAN bila masih kosong.
+   Dasar: UU Pers No. 40/1999 Pasal 12 dan Peraturan Dewan Pers tentang Standar Perusahaan Pers / Pedoman
+   Perilaku dan Standar Pers Profesional (No. 03/Peraturan-DP/IV/2024).
+1. Nama badan hukum perusahaan pers (badan hukum Indonesia, mis. PT, dengan SK Kemenkumham).
+2. Alamat redaksi, email redaksi.
+3. Penanggung jawab redaksi dan penanggung jawab usaha. Redaksi dan bisnis harus dibedakan jelas.
+4. Pemimpin Redaksi umumnya perlu kompetensi wartawan utama (UKW). Cek ketentuan terbaru di Dewan Pers.
+5. URL situs di admin/config.yml (ganti GANTI-DOMAIN-ANDA) dan subdomain GoatCounter.
+Semua data ini tampil otomatis di footer setiap halaman.
+
+C. Fitur baru sesuai Pedoman Media Siber
+- Kolom "Ralat / Koreksi / Hak jawab" + waktu pemuatan pada setiap berita (butir 4: wajib ditautkan dan diberi waktu).
+- Kotak "Berita belum terverifikasi penuh": otomatis menambahkan catatan verifikasi di akhir berita (butir 2).
+- Halaman Kode Etik, Pedoman Media Siber, Kebijakan Privasi, Disclaimer, Pilihan Editor, Berita Populer.
+
+D. Aturan redaksi yang perlu dipegang
+- Anak di bawah 18 tahun (pelaku, korban, saksi kejahatan) dan korban kejahatan susila: identitas dirahasiakan,
+  termasuk nama sekolah, alamat, dan foto yang bisa dikenali (Pedoman Pemberitaan Ramah Anak 1/Peraturan-DP/II/2019).
+- Gambar rekayasa/AI wajib diberi keterangan jelas (KEJ Pasal 2); gambar arsip dicantumkan waktunya (KEJ Pasal 4).
+- Ralat dan hak jawab dilayani; media yang tidak melayani hak jawab dapat didenda sesuai UU Pers.
+
+E. Hak akses (Opsi A)
+1. Settings > Branches: lindungi main (wajib Pull Request, minimal 1 persetujuan).
+2. Redaksi sebagai collaborator (Write); editor/pimpinan menyetujui dan menggabungkan PR.
+3. Uji dengan akun wartawan terpisah.
+
+F. Setelah deploy
+Uji login, buat satu berita Draf, setujui, pastikan tayang. Kirim sitemap.xml ke Google Search Console.
+Untuk terdata/terverifikasi Dewan Pers, ajukan pendataan melalui Dewan Pers setelah syarat B terpenuhi.
